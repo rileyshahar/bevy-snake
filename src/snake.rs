@@ -8,7 +8,7 @@ fn spawn_snake(mut commands: Commands) {
         Head,
         HEAD_SIZE,
         STARTING_ORIENTATION,
-        STARTING_POS,
+        STARTING_POSITION,
         Speed(STARTING_SPEED),
         SpriteBundle {
             sprite: Sprite {

@@ -8,6 +8,7 @@ use bevy::prelude::*;
 
 mod apple;
 mod consts;
+mod eat;
 mod grid;
 mod modn;
 mod movement;
@@ -38,6 +39,8 @@ pub fn play() {
         .add_plugin(snake::SnakePlugin)
         .add_plugin(movement::MovementPlugin)
         .add_plugin(grid::GridPlugin)
+        .add_plugin(apple::ApplePlugin)
+        .add_plugin(eat::EatPlugin)
         .insert_resource(ClearColor(ARENA_COLOR))
         .run();
 }

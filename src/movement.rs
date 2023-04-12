@@ -3,7 +3,7 @@ use crate::*;
 #[derive(Component, Deref)]
 pub struct Speed(pub Num);
 
-#[derive(Component)]
+#[derive(Component, Clone, Copy, PartialEq, Eq)]
 pub struct Position {
     pub x: Mod<ARENA_WIDTH>,
     pub y: Mod<ARENA_HEIGHT>,
