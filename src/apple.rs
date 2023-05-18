@@ -7,7 +7,7 @@ fn spawn_apple(mut commands: Commands, query: Query<With<Apple>>) {
     if query.is_empty() {
         commands.spawn((
             Apple,
-            APPLE_SIZE,
+            ENT_SIZE,
             apple_pos(),
             SpriteBundle {
                 sprite: Sprite {
